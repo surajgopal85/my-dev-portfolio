@@ -11,7 +11,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='bg-gradient-to-b from-blue-800 to-purple-800'>
       <SideNavSocials />
       <Hero 
       name="Suraj"
@@ -20,7 +20,7 @@ function App() {
       scrollText='Scroll down to learn more.'
       // ctaHref="#projects"
       />
-    </>
+    </div>
   )
 }
 
