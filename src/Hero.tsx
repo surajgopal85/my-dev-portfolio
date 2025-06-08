@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import { About } from './About';
+import { PortfolioOverview } from './PortfolioOverView';
 
 type HeroProps = {
   name: string
@@ -35,8 +36,8 @@ export const Hero: React.FC<HeroProps> = ({ name, tagline, ctaText, scrollText }
 
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-b from-blue-800 to-purple-800 text-white py-20 px-8 font-font-display space-y-4">        
-      <h1 className="text-5xl font-semibold hover:text-yellow-400 transition-colors duration-300">Hey, I'm {name}</h1>
+    <section className="flex flex-col items-center justify-center h-screen text-center text-white py-20 px-8 font-font-display space-y-4">        
+      <h1 className="mt-24 text-5xl font-semibold hover:text-yellow-400 transition-colors duration-300">Hey, I'm {name}</h1>
       {/* <p className="mt-4 text-lg text-gray-400"> */}
         {/* Typewriter animation for tagline */}
         <motion.p
@@ -87,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ name, tagline, ctaText, scrollText }
         <About />
       </div>
       <div>
-        Portfolio Pieces
+        <PortfolioOverview />
       </div>
     </section>
   )
