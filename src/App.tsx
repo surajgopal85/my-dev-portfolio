@@ -12,7 +12,7 @@ import { SideNavSocials } from './SideNavSocials';
 function App() {
 
   return (
-    <div className='min-h-screen bg-gradient-to-b from-blue-800 to-purple-800'>
+    <div className='min-h-screen bg-dark-bg text-light-text font-sans'>
       <SideNavSocials />
       <Hero 
       name="Suraj"
@@ -21,7 +21,7 @@ function App() {
       scrollText='Scroll down to learn more.'
       // ctaHref="#projects"
       />
-      <About />
+      {/* <About /> */}
       <PortfolioOverview />
     </div>
   )
