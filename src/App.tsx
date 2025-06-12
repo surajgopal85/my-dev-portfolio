@@ -4,11 +4,12 @@
 import './App.css'
 
 // my imports
+import { About } from './About';
+import { PortfolioOverview } from './PortfolioOverview';
 import { Hero } from './Hero';
 import { SideNavSocials } from './SideNavSocials';
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <div className='min-h-screen bg-gradient-to-b from-blue-800 to-purple-800'>
@@ -20,13 +21,10 @@ function App() {
       scrollText='Scroll down to learn more.'
       // ctaHref="#projects"
       />
+      <About />
+      <PortfolioOverview />
     </div>
   )
 }
 
-export default App
-
-// exforlater
-{/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
+export default App;

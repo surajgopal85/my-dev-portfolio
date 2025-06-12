@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react'
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
 import { About } from './About';
-import { PortfolioOverview } from './PortfolioOverView';
+import { PortfolioOverview } from './PortfolioOverview';
 
 type HeroProps = {
   name: string
@@ -84,12 +84,12 @@ export const Hero: React.FC<HeroProps> = ({ name, tagline, ctaText, scrollText }
       >
         {ctaText}
       </a> */}
-      <div ref={targetDivRef}>
+      {/* <div ref={targetDivRef}>
         <About />
       </div>
       <div>
         <PortfolioOverview />
-      </div>
+      </div> */}
     </section>
   )
 }
