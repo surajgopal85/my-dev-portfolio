@@ -8,11 +8,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        // Example: 'Inter' for body, 'Clash Display' (or similar) for headings
-        // You'll need to import these fonts in your main CSS or HTML
+        // 'Inter' for body, 'Clash Display' for headings (for now)
+        // import these fonts in your main CSS or HTML
         sans: ['Inter', 'sans-serif'], // A good readable sans-serif for body text
-        display: ['Clash Display', 'sans-serif'], // Or 'Montserrat', 'Roboto', 'Poppins', 'Open Sans' with specific weights
-                                               // Check Google Fonts for similar Apple/Spotify vibes: "Inter", "Plus Jakarta Sans", "Figtree"
+        display: ['Clash Display', 'sans-serif'],   // Other options:
+                                                    // 'Montserrat', 'Roboto', 'Poppins', 'Open Sans', specific weights
+                                               // Check Google Fonts for Apple/Spotify vibes: "Inter", "Plus Jakarta Sans", "Figtree"
       },
       colors: {
         // Define a very subtle, sophisticated dark palette
