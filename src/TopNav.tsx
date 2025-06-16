@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import headshot from './assets/images/suraj-gopal-headshot.jpeg';
 
 type TopNavProps = {
     onNavLinkClick: (id: string) => void;
@@ -13,7 +14,11 @@ export const TopNav: React.FC<TopNavProps> = ({ onNavLinkClick }) => {
             className="fixed top-0 left-0 right-0 z-50 p-4 bg-dark-bg bg-opacity-70 backdrop-blur-md flex justify-between items-center"
         >
             <div className="text-light-text text-xl font-display font-bold">
-                Suraj Gopal
+                <img
+                    src={headshot}
+                    alt="Suraj Gopal Headshot"
+                    className="w-12 h-12 rounded-full object-cover border border-subtle-text"
+                />
             </div>
 
             {/* Navigation Links */}
