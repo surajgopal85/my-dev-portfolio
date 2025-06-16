@@ -2,8 +2,6 @@ import React, { useState, useRef } from 'react'
 // import myHeadshot from './assets/images/suraj-gopal-headshot.jpeg';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import { About } from './About';
-import { PortfolioOverview } from './PortfolioOverView';
 
 type HeroProps = {
   name: string
@@ -84,12 +82,12 @@ export const Hero: React.FC<HeroProps> = ({ name, tagline, ctaText, scrollText }
       >
         {ctaText}
       </a> */}
-      <div ref={targetDivRef}>
+      {/* <div ref={targetDivRef}>
         <About />
       </div>
       <div>
         <PortfolioOverview />
-      </div>
+      </div> */}
     </section>
   )
 }

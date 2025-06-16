@@ -1,25 +1,36 @@
 @import "tailwindcss";
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+/* Define your custom theme variables within the @theme block */
+@theme {
+  /* Colors */
+  --color-dark-bg: #0A0A0A;
+  --color-dark-surface: #1A1A1A;
+  --color-light-text: #E0E0E0;
+  --color-subtle-text: #A0A0A0;
+  --color-accent-blue: #4F46E5;
+  --color-accent-purple: #8B5CF6;
 
-body {
-  font-family: 'Poppins', sans-serif;
-} */
-body {
-  margin: 0;
-  padding: 0;
+  /* Fonts (if you want to use custom names for utilities, otherwise just import via @import url and apply to body/h1) */
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+
+  /* You can also extend other theme values like spacing, borderRadius, etc. */
+  /* For example, if you wanted a custom 3xl breakpoint at 1920px: */
+  /* --breakpoint-3xl: 1920px; */
 }
 
-@theme {
-  --font-font-display: "Lora", "serif";
+/* Global styles (optional, can also be inside the @theme block if you want them to be part of the theme) */
+body {
+  /* Apply your default font here */
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  --color-text-light: #e0e0e0; /* Light Gray Text */
-  --color-text-dark: #333333; /* Dark Gray Text */
-
-  --color-primary-bg: #212121; /* Dark Charcoal */
-  --color-secondary-accent: #00aaff; /* Electric Blue */
-  --color-cta-bg: #39ff14; /* Neon Green */
-  
+h1, h2, h3, h4, h5, h6 {
+  /* Apply your display font here */
+  font-family: var(--font-display);
 }
 
 
