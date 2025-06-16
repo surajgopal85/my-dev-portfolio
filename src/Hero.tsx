@@ -2,8 +2,6 @@ import React, { useState, useRef } from 'react'
 // import myHeadshot from './assets/images/suraj-gopal-headshot.jpeg';
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-import { About } from './About';
-import { PortfolioOverview } from './PortfolioOverview';
 
 type HeroProps = {
   name: string

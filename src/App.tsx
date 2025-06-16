@@ -2,7 +2,7 @@ import './App.css'
 import React, { useRef } from 'react';
 import { About } from './About';
 import { TopNav } from './TopNav';
-import { PortfolioOverview } from './PortfolioOverview';
+import { PortfolioMain } from './PortfolioMain';
 import { Hero } from './Hero';
 // import { SideNavSocials } from './SideNavSocials';
 
@@ -48,7 +48,7 @@ function App() {
       <div id='about' ref={aboutRef}>
         <About />
       </div>
-      <PortfolioOverview />
+      <PortfolioMain />
     </div>
   )
 }
