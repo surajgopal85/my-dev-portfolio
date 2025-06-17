@@ -4,6 +4,7 @@ import { About } from './About';
 import { TopNav } from './TopNav';
 import { PortfolioMain } from './PortfolioMain';
 import { Hero } from './Hero';
+import { Experience } from './Experience';
 // import { SideNavSocials } from './SideNavSocials';
 
 function App() {
@@ -45,8 +46,11 @@ function App() {
       scrollText='Scroll down to learn more.'
       // ctaHref="#projects"
       />
-      <div id='about' ref={aboutRef}>
+      <div id='about' className='flex flex-col justify-center items-center' ref={aboutRef}>
         <About />
+      </div>
+      <div className='flex flex-col justify-center items-center' id='experience'>
+        <Experience />
       </div>
       <PortfolioMain />
     </div>
