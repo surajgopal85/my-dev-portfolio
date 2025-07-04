@@ -46,13 +46,17 @@ function App() {
       scrollText='Scroll down to learn more.'
       // ctaHref="#projects"
       />
-      <div id='about' className='flex flex-col justify-center items-center' ref={aboutRef}>
-        <About />
+      <div className='flex flex-col justify-center'>
+        <div id='about' className='flex flex-col justify-center items-center' ref={aboutRef}>
+          <About />
+        </div>
+        <div className='flex flex-col justify-center items-center' id='experience'>
+          <Experience />
+        </div>
+        <div>
+          <PortfolioMain />
+        </div>
       </div>
-      <div className='flex flex-col justify-center items-center' id='experience'>
-        <Experience />
-      </div>
-      <PortfolioMain />
     </div>
   )
 }
