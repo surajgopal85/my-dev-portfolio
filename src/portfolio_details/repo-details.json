@@ -1,0 +1,21 @@
+[
+    {
+        "project_title": "Learning Management System",
+        "project_description": "Software to run a school. Class creation, departments, student & teacher rosters, gradebooks, messaging between stakeholders",
+        "frontend_language": "React/Typescript",
+        "backend_language": "Express",
+        "database_management_system": "Postgresql",
+        "demo_site":"",
+        "github_repo": "https://github.com/surajgopal85/learning-management-system"
+        
+    },
+    {
+        "project_title": "Talktor",
+        "project_description": "Beta medical interpreter/translator application. STT/TTS capabilities, translation between English and Spanish, and intelligent responses to medical inquiries coming.",
+        "frontend_language": "React/Typescript",
+        "backend_language": "FastAPI",
+        "database_management_system": "Postgresql",
+        "demo_site":"",
+        "github_repo": "https://github.com/surajgopal85/talktor"
+    }
+]
