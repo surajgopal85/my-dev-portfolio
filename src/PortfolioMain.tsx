@@ -1,5 +1,6 @@
 import { WorkCard } from "./WorkCard";
 import { motion } from 'framer-motion';
+import portfolio from './portfolio_details/repo-details.json';
 
 export const PortfolioMain: React.FC = () => {
     // build animations
@@ -24,15 +25,19 @@ export const PortfolioMain: React.FC = () => {
                 My Work
             </h2>
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
             >
-                <WorkCard variants={itemVariants} />
-                <WorkCard variants={itemVariants} />
-                <WorkCard variants={itemVariants} />
+                {portfolio.map((project, index) => (
+                    <WorkCard 
+                        key={index}
+                        variants={itemVariants}
+                        project={project}
+                    />
+                ))}
             </motion.div>
             
          </section>
