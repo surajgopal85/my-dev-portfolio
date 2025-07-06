@@ -1,6 +1,6 @@
 import './App.css'
 import React, { useRef } from 'react';
-import { About } from './About';
+// import { About } from './About';
 import { TopNav } from './TopNav';
 import { PortfolioMain } from './PortfolioMain';
 import { Hero } from './Hero';
@@ -8,7 +8,7 @@ import { Experience } from './Experience';
 // import { SideNavSocials } from './SideNavSocials';
 
 function App() {
-  const aboutRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
@@ -17,8 +17,8 @@ function App() {
     let ref: React.RefObject<HTMLDivElement> | null = null;
     // switchboard to handle :)
     switch (id) {
-      case 'about':
-        ref = aboutRef;
+      case 'experience':
+        ref = experienceRef;
         break;
       case 'project':
         ref = projectsRef;
@@ -47,12 +47,12 @@ function App() {
       // ctaHref="#projects"
       />
       <div className='flex flex-col justify-center'>
-        <div id='about' className='flex flex-col justify-center items-center' ref={aboutRef}>
-          <About />
-        </div>
-        <div className='flex flex-col justify-center items-center' id='experience'>
+        <div id='experience' className='flex flex-col justify-center items-center' ref={experienceRef}>
           <Experience />
         </div>
+        {/* <div className='flex flex-col justify-center items-center' id='experience'>
+          <Experience />
+        </div> */}
         <div>
           <PortfolioMain />
         </div>
