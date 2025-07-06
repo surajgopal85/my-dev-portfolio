@@ -23,7 +23,7 @@ export const TopNav: React.FC<TopNavProps> = ({ onNavLinkClick }) => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex space-x-8 text-subtle-text">
-                <button onClick={() => onNavLinkClick('about')} className="hover:text-accent-blue transition-colors duration-200 text-lg">About</button>
+                <button onClick={() => onNavLinkClick('experience')} className="hover:text-accent-blue transition-colors duration-200 text-lg">Experience</button>
                 <button onClick={() => onNavLinkClick('projects')} className="hover:text-accent-blue transition-colors duration-200 text-lg">Projects</button>
                 <button onClick={() => onNavLinkClick('contact')} className="hover:text-accent-blue transition-colors duration-200 text-lg">Contact</button>
             </div>

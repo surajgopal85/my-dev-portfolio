@@ -22,7 +22,7 @@ export const PortfolioMain: React.FC = () => {
     return (
          <section className="py-24 px-4 sm:px-8 max-w-6xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-display font-bold text-center text-light-text mb-16">
-                My Work
+                My Portfolio
             </h2>
             <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center"
