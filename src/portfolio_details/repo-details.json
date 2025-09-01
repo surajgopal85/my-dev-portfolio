@@ -6,7 +6,8 @@
         "backend_language": "Express",
         "database_management_system": "Postgresql",
         "demo_site":"",
-        "github_repo": "https://github.com/surajgopal85/learning-management-system"
+        "github_repo": "https://github.com/surajgopal85/learning-management-system",
+        "video_src": "/assets/gifs/vehicle-dashboard-demo.gif"
         
     },
     {
@@ -16,6 +17,7 @@
         "backend_language": "FastAPI",
         "database_management_system": "Postgresql",
         "demo_site":"",
-        "github_repo": "https://github.com/surajgopal85/talktor"
+        "github_repo": "https://github.com/surajgopal85/talktor",
+        "video_src": "/assets/gifs/talktor-demo.gif"
     }
 ]
