@@ -95,7 +95,7 @@ export const Hero: React.FC<HeroProps> = ({ name, tagline, ctaText, scrollText }
       <motion.button
         onClick={() => scrollToSection(projectsRef)} // Scroll to projects section
         className="mt-12 py-3 px-8 
-                   bg-transparent border border-light-text text-light-text 
+                   bg-transparent text-light-text 
                    text-lg rounded-full hover:bg-light-text hover:text-dark-bg 
                    transition-all duration-300 font-medium z-10"
         initial={{ opacity: 0, y: 30 }}

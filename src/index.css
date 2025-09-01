@@ -4,10 +4,10 @@
 @theme {
   --color-dark-bg: #0A0A0A;
   --color-dark-surface: #1A1A1A;
-  --color-light-text: #E0E0E0;
+  --color-light-text: #f5f2f2; /* E0E0E0 */
   --color-subtle-text: #A0A0A0;
   --color-accent-blue: #4F46E5;
-  --color-accent-purple: #8B5CF6;
+  --color-accent-purple: #b79cf7; /* 8B5CF6 */
 
   /* Fonts (custom names for font utilities; otherwise import via @import url and apply to body/h1 etc) */
   --font-sans: 'Inter', sans-serif;
