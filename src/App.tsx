@@ -20,7 +20,7 @@ function App() {
       case 'experience':
         ref = experienceRef;
         break;
-      case 'project':
+      case 'projects':
         ref = projectsRef;
         break;
       case 'contact':
@@ -41,19 +41,19 @@ function App() {
       {/* <SideNavSocials /> */}
       <Hero 
       name="Suraj"
-      tagline="I build fast & accessible web apps with React & TypeScript."
-      ctaText="Learn More"
-      scrollText='Scroll down to learn more.'
+      tagline="I build fast & accessible web apps across the front and backend."
+      ctaText=""
+      scrollText='Click sections in nav to learn more.'
       // ctaHref="#projects"
       />
       <div className='flex flex-col justify-center'>
-        <div id='experience' className='flex flex-col justify-center items-center' ref={experienceRef}>
+        <div className='flex flex-col justify-center items-center' ref={experienceRef}>
           <Experience />
         </div>
         {/* <div className='flex flex-col justify-center items-center' id='experience'>
           <Experience />
         </div> */}
-        <div>
+        <div id='projects' ref={projectsRef}>
           <PortfolioMain />
         </div>
       </div>

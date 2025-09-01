@@ -34,7 +34,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ variants, project }) => {
                 <span className="bg-gray-600/20 text-pink-400 px-2 py-1 rounded-full">{project.database_management_system}</span>
             </div>
             <div className="flex justify-between mt-4">
-                <a href={project.demo_site} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline text-sm">Live Demo</a>
+                <a href={project.demo_site} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline text-sm">Live Demo (Coming Soon)</a>
                 <a href={project.github_repo} target="_blank" rel="noopener noreferrer" className="text-subtle-text hover:underline text-sm">GitHub Repo</a>
             </div>
         </motion.div>
