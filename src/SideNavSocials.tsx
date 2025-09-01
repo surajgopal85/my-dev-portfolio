@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { FaGit } from 'react-icons/fa6';
 import myHeadshot from './assets/images/suraj-gopal-headshot.jpeg';
 
 export const SideNavSocials: React.FC = () => {
