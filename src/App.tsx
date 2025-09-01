@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { TopNav } from './TopNav';
 import { PortfolioMain } from './PortfolioMain';
 import { Hero } from './Hero';
