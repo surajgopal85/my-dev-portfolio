@@ -1,12 +1,12 @@
 [
     {
-        "project_title": "Learning Management System",
-        "project_description": "Software to run a school. Class creation, departments, student & teacher rosters, gradebooks, messaging between stakeholders",
-        "frontend_language": "React/Typescript",
-        "backend_language": "Express",
+        "project_title": "Redux Vehicle Dashboard/Spring Boot Dealership API",
+        "project_description": "FE: practice with the redux toolkit (store, slices, reducers, thunks). BE: Spring boot",
+        "frontend_language": "React/Typescript/Redux",
+        "backend_language": "Spring Boot/H2",
         "database_management_system": "Postgresql",
         "demo_site":"",
-        "github_repo": "https://github.com/surajgopal85/learning-management-system",
+        "github_repo": "https://github.com/surajgopal85/dealership-api",
         "video_src": "/assets/gifs/vehicle-dashboard-demo.gif"
         
     },
