@@ -1,6 +1,5 @@
 // WorkCard.tsx
 import { motion, Variants } from 'framer-motion';
-import talktorGif from '/src/assets/gifs/talktor-demo.gif';
 
 type Project = {
     project_title: string;
