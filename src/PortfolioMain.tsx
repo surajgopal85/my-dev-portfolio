@@ -1,4 +1,5 @@
 import { WorkCard } from "./WorkCard";
+import { FeaturedCard } from "./FeaturedCard";
 import { motion } from 'framer-motion';
 import portfolio from './portfolio_details/repo-details.json';
 
@@ -24,6 +25,7 @@ export const PortfolioMain: React.FC = () => {
             <h2 className="text-4xl sm:text-5xl font-display font-bold text-center text-light-text mb-16">
                 My Portfolio
             </h2>
+            <FeaturedCard />
             <motion.div
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center"
                 variants={containerVariants}

@@ -18,8 +18,6 @@ type WorkCardProps = {
 }
 
 export const WorkCard: React.FC<WorkCardProps> = ({ variants, project }) => {
-    console.log('Project video_src:', project.video_src); // Debug log
-
 
     return (
         <motion.div
@@ -37,7 +35,7 @@ export const WorkCard: React.FC<WorkCardProps> = ({ variants, project }) => {
                     alt={`${project.project_title} demo`}
                     className="w-full h-full object-cover rounded-lg"
                     loading="lazy"
-                    onError={() => console.log('Image failed to load:', project.video_src)} // Debug
+                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                 />
                 ) : (
                 <div className="w-full h-full bg-gray-700 rounded-lg flex items-center justify-center text-subtle-text text-center">
@@ -51,7 +49,9 @@ export const WorkCard: React.FC<WorkCardProps> = ({ variants, project }) => {
                 <span className="bg-gray-600/20 text-pink-400 px-2 py-1 rounded-full">{project.database_management_system}</span>
             </div>
             <div className="flex justify-between mt-4">
-                <a href={project.demo_site} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline text-sm">Live Demo (Coming Soon)</a>
+                {project.demo_site && (
+                    <a href={project.demo_site} target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline text-sm">Live Demo</a>
+                )}
                 <a href={project.github_repo} target="_blank" rel="noopener noreferrer" className="text-subtle-text hover:underline text-sm">GitHub Repo</a>
             </div>
         </motion.div>
